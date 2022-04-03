@@ -32,14 +32,14 @@ module.exports = {
          { loader: MiniCssExtractPlugin.loader,options: {
            publicPath: './',
            reloadAll: true,
-			}, 
+			},
          },
           { loader: "css-loader" },
           { loader: "sass-loader" },
-          { loader: "resolve-url-loader" }, 
-               
+          { loader: "resolve-url-loader" },
+
             ]
-        
+
         ,
       },
       {
@@ -74,9 +74,8 @@ module.exports = {
       $: 'jquery', jquery: 'jquery', jQuery: 'jquery',
       "window.Tether": 'tether', "Popper": "popper.js"
     }),
-    //new MiniCssExtractPlugin("assets/stylesheets/styles.css")
-      new MiniCssExtractPlugin({
-      filename: '/app/assets/stylesheets/styles.css',
+    new MiniCssExtractPlugin({
+      filename: '/stylesheets/styles.css',
     })
   ],
   externals: {
